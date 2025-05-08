@@ -5,13 +5,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register-Chill</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/regstyle.css" />
+    <link rel="shortcut icon" href="./images/logo/logo-move.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/cca3dfd7a7.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <h1>Halaman Register</h1>
-    <a href="./beranda.html">Beranda</a>
-    <a href="./index.html">login</a>
+<body class="registerPage">
+    <main class=" registerContainer ">
+
+        <div class="topContainer">
+            <img class="logoChill" src=" ./images/logo/logo-chill.png " alt=" logo-chill" />
+            <h3 class="title">Masuk</h3>
+            <p>Selamat datang kembali</p>
+        </div>
+
+
+        <form class="formLogin">
+            <div class="formGroup">
+                <label class="formLabel" for="username">Username</label>
+                <input class="formInput" type=" text " placeholder=" Masukan username " name="username"
+                    id=" username " />
+            </div>
+
+            <div class="formGroup">
+                <label class="formLabel" for="password">Kata Sandi</label>
+                <div class="passwordContainer">
+                    <input class="formInput" type=" password " placeholder=" Masukan kata sandi " name="password"
+                        id=" password " />
+                    <i class=" fa-solid fa-eye-slash 
+                    togglePassword"></i>
+                </div>
+            </div>
+
+            <div class="formGroup">
+                <label class="formLabel" for="password">Konfirmasi Kata Sandi</label>
+                <div class="passwordContainer">
+                    <input class="formInput" type=" password " placeholder=" Masukan kata sandi" name="password"
+                        id=" password " />
+                    <i class=" fa-solid fa-eye-slash 
+                    togglePassword"></i>
+                </div>
+            </div>
+
+            <div class="additionalInfo">
+                <p>Sudah punya akun?
+                    <a class="link" href=" ./index.html ">Masuk</a>
+                </p>
+            </div>
+
+            <button class="button " type=" submit ">Masuk</button>
+            <p class="txt">Atau</p>
+            <button class="button buttonGoogle" type="button"><img class="buttonIcon"
+                    src=" ./images/logo/google-icon.png " alt=" google-icon "><span>Masuk
+                    dengan Google</span></button>
+
+        </form>
+    </main>
 </body>
 
 </html>

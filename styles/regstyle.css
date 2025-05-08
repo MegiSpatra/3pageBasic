@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* all body html */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.registerPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/background/bg-register.jpg);
+  /* background-image: url(../images/background/bg-login.jpg ../images/background/bg-register.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-reapet: no-reapet;
+}
+
+.registerContainer {
+  background-color: rgba(0, 0, 0, 0.84);
+  min-width: 306px;
+  padding: 24px;
+}
+.logoChill {
+  width: 94px;
+  height: 24px;
+  margin-bottom: 20px;
+}
+
+.topContainer {
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* tengah */
+  align-items: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  latter-spacing: 0, 2px;
+  margin-bottom: 4px;
+}
+
+.formLogin {
+  margin-top: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.formLabel {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.formInput {
+  background-color: transparent;
+  padding: 8px 12px;
+  border: 0.58px solid #e7e3fc3b;
+  border-radius: 12px;
+  color: #c1c2c4;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 9.24px;
+  line-height: 140%;
+  letter-spacing: 0.12px;
+}
+
+.passwordContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.togglePassword {
+  color: #e0e0e1ff;
+  font-size: 10px;
+  position: absolute;
+  top: 11px;
+  right: 12px;
+}
+
+.additionalInfo {
+  display: flex;
+  justify-content: space-between;
+  color: #c1c2c4;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+.link:link {
+  color: #ffffffff;
+}
+
+link:hover {
+  text-decoration: underline;
+}
+
+.button {
+  background-color: transparent;
+  color: #ffffff;
+  width: 100%;
+  border-radius: 14px;
+  gap: 5.78px;
+  border: 0.58px solid #e7e3fc3b;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.txt {
+  color: #9d9ea1;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin: 4px 0;
+}
+
+.buttonGoogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.button:hover {
+  background-color: #3d4142;
+}
+
+.buttonIcon {
+  width: 12px;
+  height: 12px;
+}

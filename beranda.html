@@ -2,94 +2,121 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHILL</title>
-    <link rel="stylesheet" href="./styles/bstyle.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHILL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <div class="logo">CHILL</div>
-        <nav>
-            <ul>
-                <li>Series</li>
-                <li>Film</li>
-                <li>Daftar Saya</li>
-            </ul>
-        </nav>
-        <div class="avatar"><img class="imgU" src="./images/logo/user.png" alt=""></div>
-    </header>
-
-    <div class="hero">
-        <div class="dutyy">
-
-            <h1 class="duty">Duty After School</h1>
-            <p class="pTop">Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,
-            <p>
-                Departemen Pertahanan mulai
-            </p>
-            merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis
-            depan dalam perang.
-            </p>
-            <div class="button">
-                <button>Mulai</button>
-                <button>Selengkapnya</button>
-            </div>
-
-        </div>
+<body class="bg-[#0f0f0f] text-white font-[Lato]">
+  <header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center bg-[#1c1c1e] px-8 py-4">
+    <div class="text-xl font-bold">CHILL</div>
+    <nav>
+      <ul class="flex gap-6 list-none">
+        <li class="cursor-pointer">Series</li>
+        <li class="cursor-pointer">Film</li>
+        <li class="cursor-pointer">Daftar Saya</li>
+      </ul>
+    </nav>
+    <div class="flex items-center">
+      <img class="w-10 h-10 rounded-full" src="./images/logo/user.png" alt="User Avatar">
     </div>
+  </header>
 
-    <section class="film-section">
-        <h2>Melanjutkan Tonton Film</h2>
-        <div class="film-list">
-            <div class="film-card"><img src="./images/content/2.png" alt="Film 1"></div>
-            <div class="film-card"><img src="./images/content/1 .png" alt="Film 2"></div>
-            <div class="film-card"><img src="/images/content/3.png" alt="Film 3"></div>
-            <div class="film-card"><img src="/images/content/4.png" alt="Film 3"></div>
-        </div>
-    </section>
+  <div class="relative pt-24 bg-center bg-cover bg-no-repeat p-8 flex flex-col text-left" style="background-image: url('images/background/beranda.png');">
+    <div class="absolute inset-0 bg-black/70 z-0"></div>
+    <div class="relative z-10 px-20 py-10 flex flex-col text-left">
+      <h1 class="text-2xl mb-2 text-white font-bold">Duty After School</h1>
+      <p class="text-[18px] font-medium text-white leading-[140%] tracking-[0.2px] mb-[1px]">Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,</p>
+      <p>Departemen Pertahanan mulai</p>
+      <p>merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.</p>
+      <div class="mt-4 flex gap-4">
+        <button class="bg-white text-black px-4 py-2 rounded">Mulai</button>
+        <button class="bg-white text-black px-4 py-2 rounded">Selengkapnya</button>
+      </div>
+    </div>
+  </div>
 
-    <section>
-        <h2>Top Rating Film dan Series Hari Ini</h2>
-        <div class="filmTop">
-            <div class="film-top"><img src="./images/content/topRating/allOfUs.png" alt="Top 1"></div>
-            <div class="film-tp"><img src="./images/content/topRating/bigHero.png" alt="Top 2"></div>
-            <div class="film-top"><img src="./images/content/topRating/jurasskWorld.png" alt="Top 3"></div>
-            <div class="film-top"><img src="./images/content/topRating/sonic.png" alt="Top 3"></div>
-            <div class="film-top"><img src="./images/content/topRating/suzume.png" alt="Top 3"></div>
-        </div>
-    </section>
+  <section class="px-8 py-4">
+    <h2 class="px-20 py-10 text-xl font-semibold">Melanjutkan Tonton Film</h2>
+    <div class="flex gap-4 overflow-x-auto px-20">
+      <div class="w-[302px] h-[162px] rounded-lg bg-[#333]">
+        <img src="./images/content/2.png" alt="Film 1" class="w-full h-full object-cover rounded-lg" />
+      </div>
+      <div class="w-[302px] h-[162px] rounded-lg bg-[#333]">
+        <img src="./images/content/1 .png" alt="Film 2" class="w-full h-full object-cover rounded-lg" />
+      </div>
+      <div class="w-[302px] h-[162px] rounded-lg bg-[#333]">
+        <img src="./images/content/3.png" alt="Film 3" class="w-full h-full object-cover rounded-lg" />
+      </div>
+      <div class="w-[302px] h-[162px] rounded-lg bg-[#333]">
+        <img src="./images/content/4.png" alt="Film 4" class="w-full h-full object-cover rounded-lg" />
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <h2>Film Trending</h2>
-        <div class="film-list">
-            <div class="film-card"><img src="trend1.jpg" alt="Trending 1"></div>
-            <div class="film-card"><img src="trend2.jpg" alt="Trending 2"></div>
-            <div class="film-card"><img src="trend3.jpg" alt="Trending 3"></div>
-        </div>
-    </section>
+  <section>
+    <h2 class="px-20 py-10 text-xl font-semibold">Top Rating Film dan Series Hari Ini</h2>
+    <div class="flex gap-4 overflow-x-auto px-20 mt-5">
+      <div class="w-[95.6px] h-[143.39px]">
+        <img src="./images/content/topRating/allOfUs.png" alt="Top 1" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-[95.6px] h-[143.39px]">
+        <img src="./images/content/topRating/bigHero.png" alt="Top 2" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-[95.6px] h-[143.39px]">
+        <img src="./images/content/topRating/jurasskWorld.png" alt="Top 3" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-[95.6px] h-[143.39px]">
+        <img src="./images/content/topRating/sonic.png" alt="Top 4" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-[95.6px] h-[143.39px]">
+        <img src="./images/content/topRating/suzume.png" alt="Top 5" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <h2>Rilis Baru</h2>
-        <div class="film-list">
-            <div class="film-card"><img src="new1.jpg" alt="New 1"></div>
-            <div class="film-card"><img src="new2.jpg" alt="New 2"></div>
-            <div class="film-card"><img src="new3.jpg" alt="New 3"></div>
-        </div>
-    </section>
+  <section>
+    <h2 class="px-20 py-10 text-xl font-semibold">Film Trending</h2>
+    <div class="flex gap-4 overflow-x-auto px-20">
+      <div class="w-[302px] h-[162px] rounded-lg bg-[#333]">
+        <img src="trend1.jpg" alt="Trending 1" class="w-full h-full object-cover rounded-lg" />
+      </div>
+      <div class="w-[302px] h-[162px] rounded-lg bg-[#333]">
+        <img src="trend2.jpg" alt="Trending 2" class="w-full h-full object-cover rounded-lg" />
+      </div>
+      <div class="w-[302px] h-[162px] rounded-lg bg-[#333]">
+        <img src="trend3.jpg" alt="Trending 3" class="w-full h-full object-cover rounded-lg" />
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="logo">CHILL</div>
-        <div class="footer-links">
-            <a href="#">Genre Film</a>
-            <a href="#">FAQ</a>
-            <a href="#">Kontak Kami</a>
-            <a href="#">Privasi</a>
-            <a href="#">Syarat & Ketentuan</a>
-        </div>
-    </footer>
+  <section>
+    <h2 class="px-20 py-10 text-xl font-semibold">Rilis Baru</h2>
+    <div class="flex gap-4 overflow-x-auto px-20">
+      <div class="w-[302px] h-[162px] rounded-lg bg-[#333]">
+        <img src="new1.jpg" alt="New 1" class="w-full h-full object-cover rounded-lg" />
+      </div>
+      <div class="w-[302px] h-[162px] rounded-lg bg-[#333]">
+        <img src="new2.jpg" alt="New 2" class="w-full h-full object-cover rounded-lg" />
+      </div>
+      <div class="w-[302px] h-[162px] rounded-lg bg-[#333]">
+        <img src="new3.jpg" alt="New 3" class="w-full h-full object-cover rounded-lg" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#1c1c1e] py-8 text-center">
+    <div class="text-xl font-bold">CHILL</div>
+    <div class="flex justify-center flex-wrap gap-8 mt-4 text-sm text-gray-300">
+      <a href="#">Genre Film</a>
+      <a href="#">FAQ</a>
+      <a href="#">Kontak Kami</a>
+      <a href="#">Privasi</a>
+      <a href="#">Syarat & Ketentuan</a>
+    </div>
+  </footer>
 </body>
 
 </html>
